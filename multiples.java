@@ -1,8 +1,9 @@
 import java.util.Scanner;
-public class SumOfElements {
+public class multiples {
         public static void main(String args[]){
-            int n,sum=0;
+            int n,mul=1;
             Scanner sc=new Scanner(System.in);
+            System.out.println("Multiplication of elements:-");
             System.out.print("Enter the size of array:");
             n=sc.nextInt();
             int arr[]=new int[n];
@@ -10,8 +11,8 @@ public class SumOfElements {
             for(int i=0;i<n;i++)
             {
                 arr[i]=sc.nextInt(); 
-                sum +=arr[i];
+                mul *=arr[i];
             } 
-            System.out.print("Sum of the elements is "+sum);
+            System.out.print("Multiplication of an elements is "+mul);
         }
     }
